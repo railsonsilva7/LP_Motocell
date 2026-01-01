@@ -1,126 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W725JSZX');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conserto de Celular em Florianópolis | Motocell - Autorizada</title>
-    <meta name="description" content="Reparo rápido de iPhone e Android no Centro de Floripa. Peças originais, 6 meses de garantia. Motocell: a única autorizada de SC.">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobilePhoneRepairBusiness",
-      "name": "Motocell Telecom Floripa",
-      "telephone": "+5548991944509",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "R. Felipe Schmidt, 249 - loja 113",
-        "addressLocality": "Florianópolis",
-        "addressRegion": "SC"
-      }
-    }
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-W725JSZX')
     </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motocell Floripa | Assistência Técnica Autorizada</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://motocell.com.br/wp-content/uploads/2024/04/FAV-MOTOCELL.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://motocell.com.br/wp-content/uploads/2024/04/FAV-MOTOCELL.ico"
+    />
+
+    <meta
+      name="description"
+      content="Reparo de iPhone e Android no Centro de Floripa. Peças originais e 6 meses de garantia."
+    />
 
     <style>
-        :root { --primary: #0399da; --dark: #1a1a1a; --white: #ffffff; --success: #25d366; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-        body { background: var(--white); color: var(--dark); line-height: 1.6; }
-        
-        header { background: var(--dark); padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
-        .logo { color: var(--primary); font-weight: bold; font-size: 1.5rem; text-decoration: none; }
-        
-        .hero { padding: 4rem 1rem; text-align: center; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--dark); }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; color: #444; }
-        
-        .btn-whatsapp { 
-            background: var(--success); color: white; padding: 1.2rem 2.5rem; 
-            border-radius: 50px; text-decoration: none; font-weight: bold; 
-            display: inline-flex; align-items: center; gap: 10px;
-            transition: transform 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      :root {
+        --primary: #0399da; /* Azul Motocell */
+        --dark: #000000; /* Preto Oficial */
+        --light-bg: #f4f7f9;
+        --success: #25d366;
+        --white: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: var(--white);
+        color: var(--dark);
+        overflow-x: hidden;
+      }
+
+      /* Header com Logo */
+      header {
+        background: var(--dark);
+        padding: 15px 0;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .logo-container img {
+        height: 60px; /* Ajuste conforme necessário */
+        width: auto;
+        vertical-align: middle;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(
+          180deg,
+          var(--light-bg) 0%,
+          var(--white) 100%
+        );
+      }
+      .hero h1 {
+        font-size: 2.8rem;
+        color: var(--dark);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      /* Botão WhatsApp Premium */
+      .btn-whatsapp {
+        background: var(--success);
+        color: white;
+        padding: 18px 35px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+      }
+      .btn-whatsapp:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 25px rgba(37, 211, 102, 0.3);
+      }
+
+      /* Features Cards */
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .card {
+        padding: 30px;
+        background: var(--white);
+        border-radius: 12px;
+        border-bottom: 4px solid var(--primary);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        text-align: center;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+      }
+      .card p {
+        color: #666;
+        font-size: 1rem;
+      }
+
+      footer {
+        background: var(--dark);
+        color: #888;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      footer strong {
+        color: var(--white);
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
         }
-        .btn-whatsapp:hover { transform: scale(1.05); }
-
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; padding: 3rem 1rem; max-width: 1100px; margin: 0 auto; }
-        .feature-card { padding: 1.5rem; border: 1px solid #eee; border-radius: 10px; text-align: center; }
-        .feature-card h3 { color: var(--primary); margin-bottom: 0.5rem; }
-
-        footer { background: var(--dark); color: white; padding: 2rem 1rem; text-align: center; font-size: 0.9rem; }
+      }
     </style>
-</head>
-<body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobilePhoneRepairBusiness",
+        "name": "Motocell Telecom Floripa",
+        "telephone": "+5548991944509",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Felipe Schmidt, 249 - loja 113",
+          "addressLocality": "Florianópolis",
+          "addressRegion": "SC"
+        }
+      }
+    </script>
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W725JSZX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <header>
-        <a href="#" class="logo">MOTOCELL FLORIPA</a>
+      <div class="logo-container">
+        <img
+          src="https://motocell.com.br/wp-content/uploads/2024/04/FAV-MOTOCELL.ico"
+          alt="Motocell Logo"
+        />
+        <span
+          style="
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            vertical-align: middle;
+          "
+          >MOTOCELL FLORIPA</span
+        >
+      </div>
     </header>
 
     <section class="hero">
-        <h1>Seu Celular Novo de Novo.</h1>
-        <p>Especialistas em iPhone e Android no Centro de Florianópolis.</p>
-        <p><strong>6 Meses de Garantia | Peças Originais | Reparo Rápido</strong></p>
-        
-        <a href="https://wa.me/5548991944509?text=Quero+um+orcamento+agora" 
-           id="main_cta_whatsapp" 
-           class="btn-whatsapp">
-            FALAR COM ESPECIALISTA AGORA
-        </a>
+      <h1>Seu Celular Novo de Novo.</h1>
+      <p>
+        A única assistência autorizada de Florianópolis com técnicos
+        especialistas em reparos rápidos.
+      </p>
+
+      <a
+        href="https://wa.me/5548991944509?text=Olá,+vi+o+site+e+preciso+de+um+orçamento+para+meu+celular"
+        id="main_cta_whatsapp"
+        class="btn-whatsapp"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.404.314l.542 1.317c.044.108.072.217.001.346-.072.143-.108.231-.217.36s-.216.258-.332.374c-.116.129-.239.258-.101.49.137.232.613 1.012 1.314 1.637.901.803 1.66 1.051 1.891 1.166.232.115.361.087.492-.058.13-.145.563-.651.713-.869.15-.217.303-.187.506-.116s1.286.608 1.503.723c.217.116.361.174.419.274.058.1.058.579-.086.984z"
+          />
+        </svg>
+        FALAR COM ESPECIALISTA
+      </a>
     </section>
 
     <section class="features">
-        <div class="feature-card">
-            <h3>Agilidade</h3>
-            <p>Reparos de tela e bateria feitos em até 40 minutos.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Autorizada</h3>
-            <p>Única assistência autorizada com peças de procedência em SC.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Credibilidade</h3>
-            <p>Mais de 1.000 avaliações 5 estrelas no Google.</p>
-        </div>
+      <div class="card">
+        <h3>Agilidade</h3>
+        <p>
+          Trocamos telas e baterias em menos de 40 minutos. Seu tempo é nossa
+          prioridade.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Autorizada</h3>
+        <p>
+          Peças com procedência e selo de qualidade Motocell. Segurança total
+          para seu aparelho.
+        </p>
+      </div>
+      <div class="card">
+        <h3>6 Meses de Garantia</h3>
+        <p>
+          Diferente da concorrência, oferecemos garantia real em todos os nossos
+          serviços de hardware.
+        </p>
+      </div>
     </section>
 
     <footer>
-        <p>R. Felipe Schmidt, 249 - Loja 113, Centro, Florianópolis - SC</p>
-        <p>© 2026 Motocell Telecom LTDA - Gerência Railson Silva</p>
+      <p><strong>Motocell Telecom Florianópolis</strong></p>
+      <p>R. Felipe Schmidt, 249 - Loja 113, Centro Comercial ARS</p>
+      <p style="margin-top: 15px; font-size: 0.8rem">
+        © 2026 Operação Gerenciada por Railson Silva
+      </p>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const waButton = document.getElementById('main_cta_whatsapp');
-
-            // 1. Rastreamento de Evento (Fixação de Conhecimento)
-            waButton.addEventListener('click', (e) => {
-                console.log('Evento de Conversão Disparado: WhatsApp Click');
-                
-                // Se o GTM estiver presente, enviamos para o DataLayer
-                if(window.dataLayer) {
-                    window.dataLayer.push({
-                        'event': 'whatsapp_conversion',
-                        'button_id': 'main_cta_whatsapp',
-                        'location': 'hero_section'
-                    });
-                }
-            });
-
-            // 2. Proteção de Segurança Básica
-            // Bloqueia tentativas simples de Iframe (Clickjacking)
-            if (window.self !== window.top) {
-                window.top.location = window.self.location;
-            }
-        });
-    </script>
-</body>
+  </body>
 </html>
