@@ -58,13 +58,15 @@
 
       /* Header com Logo */
       header {
-        background: var(--dark);
+        background: rgba(0, 0, 0, 0.92);
+        backdrop-filter: blur(10px);
         padding: 15px 0;
         text-align: center;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
         position: sticky;
         top: 0;
         z-index: 1000;
+        border-bottom: 1px solid rgba(3, 153, 218, 0.2);
       }
       .logo-container img {
         height: 60px; /* Ajuste conforme necessário */
@@ -81,6 +83,21 @@
           var(--light-bg) 0%,
           var(--white) 100%
         );
+        position: relative;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(3, 153, 218, 0.05),
+          transparent 70%
+        );
+        pointer-events: none;
       }
       .hero h1 {
         font-size: 2.8rem;
@@ -88,17 +105,25 @@
         margin-bottom: 15px;
         text-transform: uppercase;
         letter-spacing: -1px;
+        position: relative;
+        z-index: 1;
       }
       .hero p {
         font-size: 1.2rem;
         color: #555;
         max-width: 600px;
         margin: 0 auto 30px;
+        position: relative;
+        z-index: 1;
       }
 
       /* Botão WhatsApp Premium */
       .btn-whatsapp {
-        background: var(--success);
+        background: linear-gradient(
+          135deg,
+          var(--success),
+          rgba(37, 211, 102, 0.85)
+        );
         color: white;
         padding: 18px 35px;
         border-radius: 8px;
@@ -109,11 +134,17 @@
         align-items: center;
         gap: 12px;
         transition: all 0.3s ease;
-        box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
       .btn-whatsapp:hover {
         transform: translateY(-3px);
-        box-shadow: 0 15px 25px rgba(37, 211, 102, 0.3);
+        box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+        background: linear-gradient(
+          135deg,
+          rgba(37, 211, 102, 0.95),
+          rgba(37, 211, 102, 0.9)
+        );
       }
 
       /* Features Cards */
@@ -127,15 +158,20 @@
       }
       .card {
         padding: 30px;
-        background: var(--white);
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
         border-radius: 12px;
         border-bottom: 4px solid var(--primary);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: 0.3s;
+        border-top: 1px solid rgba(3, 153, 218, 0.15);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s ease;
         text-align: center;
       }
       .card:hover {
         transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        border-top: 1px solid rgba(3, 153, 218, 0.3);
       }
       .card h3 {
         color: var(--primary);
@@ -148,19 +184,43 @@
       }
 
       footer {
-        background: var(--dark);
-        color: #888;
+        background: rgba(0, 0, 0, 0.94);
+        backdrop-filter: blur(10px);
+        color: rgba(255, 255, 255, 0.7);
         padding: 40px 20px;
         text-align: center;
+        border-top: 1px solid rgba(3, 153, 218, 0.15);
       }
       footer strong {
-        color: var(--white);
+        color: rgba(255, 255, 255, 0.95);
       }
 
       @media (max-width: 768px) {
         .hero h1 {
           font-size: 2rem;
         }
+      }
+
+      /* Link secundário elegante */
+      .hero a[href*='wa.me'] {
+        position: relative;
+        z-index: 1;
+      }
+      .hero p a {
+        display: inline-block;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 2px;
+        border-bottom: 2px solid rgba(3, 153, 218, 0.3);
+      }
+      .hero p a:hover {
+        color: var(--dark);
+        border-bottom-color: var(--primary);
+        transform: translateY(-2px);
       }
     </style>
     <script type="application/ld+json">
@@ -180,9 +240,15 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W725JSZX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W725JSZX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
       <div class="logo-container">
@@ -198,7 +264,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             margin-left: 10px;
             vertical-align: middle;
           "
-          >MOTOCELL FLORIPA</span
+          >MOTOCELL FLORIPA
+          <p>A sua assistência técnica autorizada</p></span
         >
       </div>
     </header>
@@ -210,18 +277,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         especialistas em reparos rápidos.
       </p>
 
-      <a
-        href="https://wa.me/5548991944509?text=Olá,+vi+o+site+e+preciso+de+um+orçamento+para+meu+celular"
-        id="main_cta_whatsapp"
-        class="btn-whatsapp"
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-          <path
-            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.001.332.005c.109.004.258-.041.404.314l.542 1.317c.044.108.072.217.001.346-.072.143-.108.231-.217.36s-.216.258-.332.374c-.116.129-.239.258-.101.49.137.232.613 1.012 1.314 1.637.901.803 1.66 1.051 1.891 1.166.232.115.361.087.492-.058.13-.145.563-.651.713-.869.15-.217.303-.187.506-.116s1.286.608 1.503.723c.217.116.361.174.419.274.058.1.058.579-.086.984z"
+      <div style="position: relative; z-index: 2">
+        <a
+          href="https://wa.me/5548991944509?text=Olá,+vi+o+site+e+preciso+de+um+orçamento+para+meu+celular"
+          id="main_cta_whatsapp"
+          class="btn-whatsapp"
+        >
+          <img
+            src="https://images.icon-icons.com/373/PNG/96/Whatsapp_37229.png"
+            alt="WhatsApp"
+            style="width: 48px; height: 48px"
           />
-        </svg>
-        FALAR COM ESPECIALISTA
-      </a>
+          FALAR COM ESPECIALISTA
+        </a>
+        <p style="margin-top: 12px; font-size: 1.05rem; color: #333">
+          <a href="https://wa.me/5548991944509?text=Olá,+vi+o+site+e+preciso+de+um+orçamento+para+meu+celular"
+          id="main_cta_whatsapp">Busca qualidade? Então chama</a>
+        </p>
+      </div>
     </section>
 
     <section class="features">
@@ -243,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>6 Meses de Garantia</h3>
         <p>
           Diferente da concorrência, oferecemos garantia real em todos os nossos
-          serviços de hardware.
+          serviços de hardware e software.
         </p>
       </div>
     </section>
